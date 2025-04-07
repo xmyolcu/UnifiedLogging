@@ -67,6 +67,13 @@ public class FormChangeLog
     public FormChangeLogNameModel? DoneAt { get; set; }
 }
 
+public class QuestionLog
+{
+    public string QuestionId { get; set; }
+    
+    public List<FormQuestionChangeLog> QuestionLogs { get; set; } = new();
+}
+
 //Değişmedi, sadece model türleri artık ILogBase uyumlu
 public class FormQuestionChangeLog
 {

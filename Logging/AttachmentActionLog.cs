@@ -1,5 +1,6 @@
 namespace Logging;
 
+
 public class AttachmentActionLog
 {
     public string AttachmentName { get; set; } = string.Empty;
