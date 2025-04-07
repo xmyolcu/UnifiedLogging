@@ -10,8 +10,5 @@ public class ActionLog : ActionLogBase
 
     public string DropExplanation { get; set; } = string.Empty;
     public string ActionStatus { get; set; } = string.Empty;
-
-    public List<AttachmentActionLog> Attachments { get; set; } = new();
-
     public override string GetLogType() => "ActionLog";
 }

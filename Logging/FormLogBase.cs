@@ -43,8 +43,8 @@ public class FormChangeLog
     public FormChangeTemplateNameModel? CreatedFromTemplateAt { get; set; }
     
     public FormChangeLogNameModel? FormCreatedAt { get; set; }
-    
-    public FormChangeLogNameModel? UpdatedAt { get; set; }
+
+    public List<FormChangeLogNameModel> UpdatedAt { get; set; } = new List<FormChangeLogNameModel>();
     
     public FormChangeLogNameModel? PendingAt { get; set; }
     
