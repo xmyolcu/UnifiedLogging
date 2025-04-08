@@ -3,6 +3,9 @@ namespace Logging;
 
 public class AttachmentActionLog
 {
+    public string GoalId { get; set; }
+    public long QuestionId { get; set; }
+    public string GoalActionId { get; set; }
     public string AttachmentName { get; set; } = string.Empty;
     public string AttachmentType { get; set; } = string.Empty;
 

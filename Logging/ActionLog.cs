@@ -1,18 +1,10 @@
 namespace Logging;
 
-
-public class ActionLog
+public class ActionChangeLog : ActionLogBase
 {
     public string GoalId { get; set; }
     public long QuestionId { get; set; }
     public string GoalActionId { get; set; }
-    public List<ActionChangeLog> Logs { get; set; } = new();
-    
-    public List<AttachmentActionLog> ActionAttachmentLogs { get; set; } = new();
-
-}
-public class ActionChangeLog : ActionLogBase
-{
     public string ActionText { get; set; } = string.Empty;
     public DateTime? ActionEndDate { get; set; }
 
