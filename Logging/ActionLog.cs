@@ -13,5 +13,9 @@ public class ActionChangeLog : ActionLogBase
 
     public string DropExplanation { get; set; } = string.Empty;
     public string ActionStatus { get; set; } = string.Empty;
-    public override string GetLogType() => "ActionLog";
+
+    public override string GetLogType()
+    {
+        return "ActionLog";
+    }
 }

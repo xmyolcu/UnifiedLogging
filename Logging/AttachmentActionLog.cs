@@ -1,6 +1,5 @@
 namespace Logging;
 
-
 public class AttachmentActionLog
 {
     public string GoalId { get; set; }
@@ -11,8 +10,11 @@ public class AttachmentActionLog
 
     public DateTime ActionTime { get; set; }
     public string ActionTakenBy { get; set; } = string.Empty;
-    
-    public string ActionType { get; set; } = string.Empty;  // Upload, Delete, Download
 
-    public string GetLogType() => "AttachmentActionLog";
+    public string ActionType { get; set; } = string.Empty; // Upload, Delete, Download
+
+    public string GetLogType()
+    {
+        return "AttachmentActionLog";
+    }
 }
