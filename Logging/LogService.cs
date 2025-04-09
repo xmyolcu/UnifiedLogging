@@ -26,3 +26,16 @@ public class LogService
         return LogTemplateEngine.Render(template.Template, log.TemplateValues);
     }
 }
+
+/*
+   { "user", "Kullanıcı" },
+   { "date", "2025-04-09" }
+   { "confirm-status", 3 },
+   { "process-status", 4 },
+   { "new-text", "Lorem ipsum dolar sit amet"},
+   { "last-text", "Lorem ipsum dolar sit amet"},
+   
+   Hedef {{user}} tarafından {{date}} tarihinde Hedef Metni Düzenlendi. Onay Status : {{confirm-status}} , Durum Status {{process-status}}
+   Yeni Hedef Metni : {{new-text}}
+   Eski Hedef Metni : {{last-text}}
+*/
